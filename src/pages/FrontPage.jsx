@@ -27,7 +27,7 @@ export const FrontPage = () => {
                                     img={item.image}
                                     title={item.title}
                                     text={item.teaser}
-                                    link={`/nyheder/${item.id}`}
+                                    link={`/news/${item.id}`}
                                 />
                             );
                         })}
