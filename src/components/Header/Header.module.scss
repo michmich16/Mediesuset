@@ -1,0 +1,16 @@
+   .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div{
+            padding-top: 2rem;
+            padding-left: 2rem;
+        }
+   }
+    }
