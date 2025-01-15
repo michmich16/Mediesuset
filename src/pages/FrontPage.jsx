@@ -4,6 +4,7 @@ import { NewsCard } from '../components/NewsCard/NewsCard';
 import { SectionTitle } from '../components/SectionTitle/SectionTitle';
 import { useGet } from '../hooks/useGet';
 import { MarginContainer } from '../components/MarginContainer/MarginContainer';
+import { NavLink } from 'react-router-dom';
 
 export const FrontPage = () => {
 

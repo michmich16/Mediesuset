@@ -1,4 +1,5 @@
 import style from "./NewsCard.module.scss";
+import { NavLink } from "react-router-dom";
 
 export const NewsCard = ({ img, title, text, link }) => {
     return (
@@ -6,7 +7,7 @@ export const NewsCard = ({ img, title, text, link }) => {
             <img src={img} alt={title} />
             <h3>{title}</h3>
             <p>{text.slice(0, 100)}...</p>
-            <a href={link}>Læs mere</a>
+            <NavLink to={link}>Læs Mere</NavLink>
         </div>
     );
 }
