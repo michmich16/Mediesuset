@@ -50,7 +50,7 @@ export const LoginPage = () => {
                 <GridContainer columns={1} gap={"1rem"}>
                     <SectionTitle title={"LOGIN"} text={loginMessage} />
                     <form>
-                    <p style={{ textAlign: "center" }}>Indtast login oplysninger</p>
+                    <p style={{ textAlign: "center", fontSize: "20px" }}>Indtast login oplysninger</p>
                         <div className={style.inputStyle}>
                             <FaAt />
                             <InputField

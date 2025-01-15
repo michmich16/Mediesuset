@@ -16,12 +16,12 @@ export const Navigation = () => {
                     </NavLink>
                     <ul className={style.dropdownMenu}>
                         <li>
-                            <NavLink to="/events/lineup">
+                            <NavLink to="/lineup">
                                 LINE-UP
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/events/program">
+                            <NavLink to="/program">
                                 PROGRAM
                             </NavLink>
                         </li>

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "../components/Header/Header";
-import { UserProvider } from '../contexts/UserContext';
+import { UserProvider } from '../contexts/userContext';
+import { Footer } from "../components/Footer/Footer";
 
 export const MainLayout = () => {
 
@@ -10,6 +11,7 @@ export const MainLayout = () => {
             <UserProvider>
                 <Outlet />
             </UserProvider>
+            <Footer/>
         </>
     )
 }
