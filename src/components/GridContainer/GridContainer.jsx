@@ -1,9 +1,10 @@
 import style from "./GridContainer.module.scss";
 
-export const GridContainer = ({ children, columns, sx, gap }) => {
+export const GridContainer = ({ children, columns, sx, gap, paddingTop }) => {
     const inlinestyle ={
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
         gap:`${gap}`,
+        paddingTop:`${paddingTop}`,
     }
 
     return(

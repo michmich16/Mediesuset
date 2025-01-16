@@ -1,0 +1,32 @@
+.programCardStyle{
+    width: 100%;
+    div{
+        height: 35px;
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        h3{
+            padding: 0 1rem;
+        }
+        
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        background-color: #EFEFEF;
+        
+        li{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            border-bottom: 1px solid #E9485B;
+            height: 35px;
+            align-items: center;
+
+            p{
+                padding: 0 1rem;
+            }
+        }
+    }
+}
