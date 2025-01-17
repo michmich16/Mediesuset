@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import style from "./Navigation.module.scss";
+import { FaSearch } from "react-icons/fa";
 
 export const Navigation = () => {
     return (
@@ -48,7 +49,7 @@ export const Navigation = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <button>search</button>
+                    <button><FaSearch /></button>
                 </li>
             </ul>
         </nav>

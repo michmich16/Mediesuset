@@ -1,0 +1,36 @@
+.ticketCardStyle{
+    display: flex;
+    flex-direction: column;
+    background-color: #CFCFCF;
+    &:nth-child(2n){
+        background-color: #EFEFEF;
+    }
+
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        
+        ul{
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+            li{
+                list-style: none;
+            }
+        }
+        button{
+            padding: 0.8rem;
+            background-color: #E9485B;
+            color: white;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background-color: #ff223b;
+            }
+        }
+    }
+}

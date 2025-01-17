@@ -1,0 +1,13 @@
+.ticketContainer{
+    display: flex;
+    flex-direction: column;
+    &:nth-child(2){
+        margin-top: 2rem;
+    }
+    h3{
+        padding: 1rem;
+        background-color: #333333;
+        color: white;
+        font-weight: 300;
+    }
+}

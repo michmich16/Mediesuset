@@ -1,21 +1,17 @@
 import style from './TicketCard.module.scss';
 
-export const TicketCard = ({ ticket, price, type }) => {
-    return(
+export const TicketCard = ({ ticket, price }) => {
+    return (
         <>
-        <section className={style.ticketCardStyle}>
-            <span>
-                <h2>{type}</h2>
-            </span>
-            <div>
-            <ul>
-                <li>{ticket}</li>
-                <li>{price}</li>
-            </ul>
-            <button>KØB BILLET</button>
-            </div>
-
-        </section>
+            <section className={style.ticketCardStyle}>
+                <div>
+                    <ul>
+                        <li>{ticket}</li>
+                        <li>{price} DKK</li>
+                    </ul>
+                        <button>KØB BILLET</button>
+                </div>
+            </section>
         </>
     )
 }

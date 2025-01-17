@@ -45,10 +45,10 @@ export const LoginPage = () => {
 
     return (
         <>
-            <Hero img="camp2-foto-colourbox.jpg" imgPosition={'100% 30%'} />
+            <Hero img="camp2-foto-colourbox.jpg" imgPosition={'100% 23%'} />
+                    <SectionTitle title={"LOGIN"} text={loginMessage} />
             <MarginContainer>
                 <GridContainer columns={1} gap={"1rem"}>
-                    <SectionTitle title={"LOGIN"} text={loginMessage} />
                     <form>
                     <p style={{ textAlign: "center", fontSize: "20px" }}>Indtast login oplysninger</p>
                         <div className={style.inputStyle}>

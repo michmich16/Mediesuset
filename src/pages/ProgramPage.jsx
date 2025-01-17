@@ -15,7 +15,7 @@ export const ProgramPage = () => {
 
     const [selectedFilter, setSelectedFilter] = useState("ONSDAG");
 
-    // Filter items by day
+    // Filtere items med date
     const getFilteredItems = () => {
         if (!data?.items) return [];
         return data.items.filter((item) => {
@@ -29,7 +29,7 @@ export const ProgramPage = () => {
     // Group items med .reduce https://dev.to/learnwithparam/how-to-group-an-array-of-objects-through-a-key-using-array-reduce-in-javascript-1lki
     const groupByScene = (items) => {
         const grouped = items.reduce((acc, item) => {
-            const scene = item.stage_name; // Default scene if missing
+            const scene = item.stage_name; // Default scene hvis der mangler
             if (!acc[scene]) acc[scene] = [];
             acc[scene].push(item);
             return acc;
@@ -43,8 +43,8 @@ export const ProgramPage = () => {
     return (
         <>
             <Hero img="crowd3-foto-colourbox.jpg" imgPosition={"100% 80%"} />
-            <MarginContainer>
                 <SectionTitle title={"PROGRAM"} />
+            <MarginContainer>
                 <FilterBar
                     filters={["ONSDAG", "TORSDAG", "FREDAG", "LØRDAG"]}
                     onFilterSelect={setSelectedFilter}

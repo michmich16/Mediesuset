@@ -23,7 +23,7 @@ export const LineUpPage = () => {
             case "A-Å":
                 return [...data.items].sort((a, b) =>
                     a.title.localeCompare(b.title, "da") //da for æøå
-                ); // Sort alfabetisk
+                ); // Sorter efter alfabetisk
             case "RØD SCENE":
             case "BLÅ SCENE":
             case "GRØN SCENE":
@@ -43,8 +43,8 @@ export const LineUpPage = () => {
     return (
         <>
             <Hero img="crowd3-foto-colourbox.jpg" imgPosition={"100% 80%"} />
-            <MarginContainer>
                 <SectionTitle title={"LINE UP"} />
+            <MarginContainer>
                 <FilterBar
                     filters={["A-Å", "RØD SCENE", "BLÅ SCENE", "GRØN SCENE", "LILLA SCENE"]}
                     onFilterSelect={setSelectedFilter} // Pass filter selection callback
