@@ -189,7 +189,7 @@ export const CheckOutPage = () => {
                     {error && <p className={style.errorMessage}>Error: {error.message}</p>}
                     {orderMessage && <p className={style.successMessage}>{orderMessage}</p>}
                     <div className={style.sendBtnContainer}>
-                        <button type="submit" className={style.sendBtnStyle}>SEND</button>
+                        <button onClick={() => submitData()} className={style.sendBtnStyle}>SEND</button>
                     </div>
                 </form>
             </MarginContainer>
