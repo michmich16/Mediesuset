@@ -8,15 +8,7 @@ export function useGet(url, token, param) {
   useEffect(() => {
     setIsLoading(true);
 
-    const options = {
-      headers: token
-        ? {
-            Authorization: `Bearer ${token}`,
-          }
-        : {},
-    };
-
-    fetch(url, options)
+    fetch(url)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => setError(err))
