@@ -12,6 +12,7 @@ import { NewsDetailsPage } from './pages/NewsDetailsPage'
 import { ProgramPage } from './pages/ProgramPage'
 import { LineUpPage } from './pages/LineUpPage'
 import { NoPage } from './pages/NoPage'
+import { CheckOutPage } from './pages/CheckOutPage'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route path={"/program"} element={<ProgramPage />} />
             <Route path={"/camps"} element={<CampsPage />} />
             <Route path={"/tickets"} element={<TicketPage />} />
+            <Route path={"/checkout"} element={<CheckOutPage />} />
             <Route path={"/info"} element={<InfoPage />} />
             <Route path="/news/:id" element={<NewsDetailsPage />} />
             <Route path={"/*"} element={<NoPage />} />

@@ -19,8 +19,6 @@ export const usePost = ({ url, body, token }) => {
             .then((data) => setData(data))
             .catch((err) => setError(err))
             .finally(() => setIsLoading(false));
-
-            fetchData();
     }, [url, body]);
 
     return { data, error, isLoading };

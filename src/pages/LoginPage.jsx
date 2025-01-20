@@ -36,6 +36,8 @@ export const LoginPage = () => {
                 if (data.access_token) {
                     setUserData(data);
                     setLoginMessage(`Du er nu logget ind`);
+                    console.log(data);
+                    
                 } else {
                     setLoginMessage('Forkert brugernavn eller password');
                 }
